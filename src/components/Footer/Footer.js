@@ -5,7 +5,7 @@ import './Footer.scss';
 export const Footer = () => (
   <footer className="page-footer">
     <div className='container'>
-      <a onClick={() => browserHistory.push('/admin')}> Hallinta</a>
+      <a onClick={() => browserHistory.push(`${PREFIX_URL}/admin`)}> Hallinta</a>
       <a href='https://athene.fi/hallinto/materiaalit/' className='navbar-link'>Tietosuoja</a>
       <a href='https://athene.fi' className='navbar-link'>Athene.fi</a>
     </div>
