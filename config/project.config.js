@@ -84,6 +84,7 @@ config.globals = {
   TEST     : config.env === 'test',
   COVERAGE : !argv.watch && config.env === 'test',
   BASENAME : JSON.stringify(process.env.BASENAME || ''),
+  PREFIX_URL : JSON.stringify(process.env.PREFIX_URL || ''),
 };
 
 // ------------------------------------
