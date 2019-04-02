@@ -90,6 +90,8 @@ config.globals = {
   BRANDING_FOOTER_GDPR_LINK: JSON.stringify(process.env.BRANDING_FOOTER_GDPR_LINK),
   BRANDING_FOOTER_HOME_TEXT: JSON.stringify(process.env.BRANDING_FOOTER_HOME_TEXT),
   BRANDING_FOOTER_HOME_LINK: JSON.stringify(process.env.BRANDING_FOOTER_HOME_LINK),
+  BRANDING_FOOTER_CREDIT_TEXT: JSON.stringify(process.env.BRANDING_FOOTER_CREDIT_TEXT),
+  BRANDING_FOOTER_CREDIT_LINK: JSON.stringify(process.env.BRANDING_FOOTER_CREDIT_LINK),
 };
 
 // ------------------------------------

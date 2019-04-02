@@ -8,6 +8,7 @@ export const Footer = () => (
       <a onClick={() => browserHistory.push(`${PREFIX_URL}/admin`)}> Hallinta</a>
       <a href={BRANDING_FOOTER_GDPR_LINK} className='navbar-link'>{BRANDING_FOOTER_GDPR_TEXT}</a>
       <a href={BRANDING_FOOTER_HOME_LINK} className='navbar-link'>{BRANDING_FOOTER_HOME_TEXT}</a>
+      <a href={BRANDING_FOOTER_CREDIT_LINK} className='navbar-link'>{BRANDING_FOOTER_CREDIT_TEXT}</a>
     </div>
   </footer>
 );
