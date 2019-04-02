@@ -21,3 +21,6 @@ BRANDING_FOOTER_HOME_TEXT=Athene.fi
 BRANDING_FOOTER_HOME_LINK=https://athene.fi
 BRANDING_MAIL_FOOTER_TEXT=Rakkaudella, Tietskarijengi & Athene
 BRANDING_MAIL_FOOTER_LINK=ilmo.athene.fi
+BRANDING_FOOTER_CREDIT_TEXT=Ilmomasiina by Athenen tietskarijengi
+BRANDING_FOOTER_CREDIT_LINK=https://github.com/athenekilta/ilmomasiina
+
