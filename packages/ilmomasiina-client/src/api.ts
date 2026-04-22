@@ -40,6 +40,9 @@ export function configureApi(url: string) {
 }
 
 export async function apiFetch<T = unknown>(uri: string, { method = "GET", body, headers, signal }: FetchOptions = {}) {
+  
+  if (method === "DELETE") body = body || {};
+  
   const allHeaders = {
     ...(headers || {}),
   };
