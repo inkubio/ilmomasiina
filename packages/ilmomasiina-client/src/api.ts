@@ -41,18 +41,21 @@ export function configureApi(url: string) {
 
 export async function apiFetch<T = unknown>(uri: string, { method = "GET", body, headers, signal }: FetchOptions = {}) {
   
-  if (method === "DELETE") body = body || {};
+  let requestBody = body;
+  if (method === "DELETE") {
+    requestBody = requestBody || {};
+  }
   
   const allHeaders = {
     ...(headers || {}),
   };
-  if (body !== undefined) {
+  if (requestBody !== undefined) {
     allHeaders["Content-Type"] = "application/json; charset=utf-8";
   }
 
   const response = await fetch(`${apiUrl}/${uri}`, {
     method,
-    body: body === undefined ? undefined : JSON.stringify(body),
+    body: requestBody === undefined ? undefined : JSON.stringify(requestBody),
     headers: allHeaders,
     signal,
   }).catch((err) => {
